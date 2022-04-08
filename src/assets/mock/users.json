@@ -1,0 +1,43 @@
+[{
+    "id": "1",
+    "fullName": "Alexandra",
+    "sex": "female",
+    "age": 30,
+    "matchedYou": false
+  },
+  {
+    "id": "2",
+    "fullName": "Vasilina",
+    "sex": "female",
+    "age": 32,
+    "matchedYou": false
+  },
+  {
+    "id": "3",
+    "fullName": "Jessica",
+    "sex": "female",
+    "age": 23,
+    "matchedYou": true
+  },
+  {
+    "id":"4",
+    "fullName": "Anton",
+    "sex": "male",
+    "age": 25,
+    "matchedYou": true
+  },
+  {
+    "id":"5",
+    "fullName": "Sarah",
+    "sex": "female",
+    "age": 27,
+    "matchedYou": false
+  },
+  {
+    "id":"6",
+    "fullName": "Kseniya",
+    "sex": "female",
+    "age": 23,
+    "matchedYou": true
+  }
+]

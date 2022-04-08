@@ -1,0 +1,101 @@
+:host {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    min-width: 100px;
+  }
+
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .tinder-content-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+
+    .card-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex: 1 0 auto;
+    }
+
+    .card-item {
+      //   will-change: transform;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .card-actions {
+      flex: 0 0 auto;
+
+      &-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    }
+
+    &-matched {
+      display: none;
+
+      &.show {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: opacity 0.3s;
+      }
+
+      .card-wrap-matched {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 45px);
+
+        &-block {
+          padding: 20px;
+          font-size: 24px;
+          font-weight: 500;
+          background-color: #c2185b;
+          border-radius: 4px;
+
+          p {
+            margin: auto;
+          }
+        }
+      }
+
+      .card-actions {
+        flex: 0 0 auto;
+
+        &-wrap {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+
+}
